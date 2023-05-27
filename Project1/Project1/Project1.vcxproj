@@ -84,7 +84,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include;C:\Users\Liang Nie\Documents\GitHub\LaptopDesktopSync\All_Libraries\SDL2\src\lib\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Liang Nie\Documents\VS LIBRARIES\SDL2_Image\include;C:\Users\Liang Nie\Documents\VS LIBRARIES\SDL2\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Liang Nie\Documents\VS LIBRARIES\SDL2_Image\lib\x64;C:\Users\Liang Nie\Documents\VS LIBRARIES\SDL2\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -131,8 +132,12 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>cudart.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>cudart.lib;SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Liang Nie\Documents\VS LIBRARIES\SDL2\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <CudaCompile>
+      <CodeGeneration>compute_86,sm_86</CodeGeneration>
+    </CudaCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
