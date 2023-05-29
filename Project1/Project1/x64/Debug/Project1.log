@@ -1,6 +1,12 @@
 ﻿  Compiling CUDA source file main.cu...
   
   C:\Users\Liang Nie\Documents\GitHub\VisualStudioRepository\Project1\Project1>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\bin\nvcc.exe" -gencode=arch=compute_86,code=\"sm_86,compute_86\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc143.pdb" -o "C:\Users\Liang Nie\Documents\GitHub\VisualStudioRepository\Project1\Project1\x64\Debug\main.cu.obj" "C:\Users\Liang Nie\Documents\GitHub\VisualStudioRepository\Project1\Project1\main.cu" 
+C:\Users\Liang Nie\Documents\GitHub\VisualStudioRepository\Project1\Project1\main.cu(17): warning #177-D: variable "SCREEN_MAX_ANGLE" was declared but never referenced
+    const double SCREEN_MAX_ANGLE = 22.5;
+                 ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
   main.cu
-  tmpxft_00002f64_00000000-7_main.cudafe1.cpp
+  tmpxft_000036d8_00000000-7_main.cudafe1.cpp
   Project1.vcxproj -> C:\Users\Liang Nie\Documents\GitHub\VisualStudioRepository\Project1\x64\Debug\FirstProject.exe

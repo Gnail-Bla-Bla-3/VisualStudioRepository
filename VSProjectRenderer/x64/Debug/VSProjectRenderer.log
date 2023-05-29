@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\crt\host_defines.h(122,1): warning C4005: '__forceinline__': macro redefinition
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\cuda\std\detail\__config(38,1): message : see previous definition of '__forceinline__'
+C:\Users\Liang Nie\Documents\GitHub\VisualStudioRepository\VSProjectRenderer\main.cpp(210,1): warning C4552: '-': result of expression not used
+  VSProjectRenderer.vcxproj -> C:\Users\Liang Nie\Documents\GitHub\VisualStudioRepository\VSProjectRenderer\x64\Debug\VSProjectRenderer.exe
